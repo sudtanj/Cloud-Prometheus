@@ -1,6 +1,8 @@
 language: minimal
 sudo: true
 dist: xenial
+cache:
+    apt: true
 script:
   - chmod 777 ./run.sh
   - ./run.sh < keyboard.txt
