@@ -3,4 +3,4 @@ sudo: true
 dist: xenial
 script:
   - chmod 777 ./run.sh
-  - ./run.sh
+  - ./run.sh < keyboard.txt
