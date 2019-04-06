@@ -1,0 +1,6 @@
+language: minimal
+sudo: false
+dist: xenial
+script:
+  - chmod 777 ./run.sh
+  - ./run.sh
