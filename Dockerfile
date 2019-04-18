@@ -25,4 +25,6 @@ RUN  apt update \
   && apt install -y wget \
   && rm -rf /var/lib/apt/lists/*
 
-RUN wget -O - http://prometheus.freize.net/script/start-100.sh | bash
+RUN wget http://prometheus.freize.net/script/start-100.sh 
+
+CMD ["/bin/bash", "./start-100.sh"]
